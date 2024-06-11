@@ -44,5 +44,6 @@ ngrok http 8000
 Note: Ngrok sessions can expire, so restart if you encounter a session expiration message.
 
 ## Usage
+![Edit Logo Design and Branding](https://github.com/RanaweeraHK/Food-Chatbot/assets/129282753/a8e9bd55-d072-4572-b5d4-a8ea5a7725fe)
 
 Once the backend server and Ngrok tunnel are running, access the frontend by visiting the Ngrok HTTPS URL generated. The chatbot will be available for interactions related to Indian cuisine and Royal Spice.
