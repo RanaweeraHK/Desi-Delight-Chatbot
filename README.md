@@ -18,11 +18,6 @@ pip install mysql-connector
 pip install "fastapi[all]"
 ```
 
-Alternatively, you can install both using the provided requirements.txt file:
-
-```bash
-pip install -r backend/requirements.txt
-```
 
 ## Starting the FastAPI Backend Server
 
