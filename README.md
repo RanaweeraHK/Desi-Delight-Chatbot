@@ -1,5 +1,8 @@
 # Desi Delight Chatbot for Royal Spice
 
+![Try Magic Design (2)](https://github.com/RanaweeraHK/Food-Chatbot/assets/129282753/04c51c35-5869-4051-85f4-d3e1c10b5640)
+
+
 Desi Delight is a chatbot developed for the Indian food website Royal Spice. It uses Dialogflow for chatbot functionalities, FastAPI for the backend, and HTML/CSS for the frontend.
 
 ## Directory Structure
