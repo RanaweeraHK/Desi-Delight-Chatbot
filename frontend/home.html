@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        .chat-bot-popup {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 350px;
+            height: 430px;
+            border: none;
+            z-index: 1000;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .chat-bot-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #f39c12;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            font-size: 24px;
+            z-index: 1001;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <a href="#home">HOME</a> |
+                <a href="#menu">MENU</a> |
+                <a href="#location">LOCATION</a> |
+                <a href="#aboutus">ABOUT US</a> |
+                <a href="#contactus">CONTACT US</a>
+            </nav>
+        </header>
+
+        <section id="home">
+            <img src="1.png" >
+            <!-- Add images here -->
+        </section>
+
+        <section id="menu">
+            <h2>Our Menu</h2>
+            <div class="grid-container">
+                <img src="menu1.png" alt="Menu item 1">
+                <img src="menu2.jpg" alt="Menu item 2">
+                <img src="menu3.jpg" alt="Menu item 3">
+            </div>
+        </section>
+
+        <section id="location">
+            <h2>Location</h2>
+            <p>Lane 23, Colombo 7, Sri Lanka</p>
+            <!-- Add map widget here -->
+        </section>
+
+        <section id="contactus">
+            <h2>Contact Us</h2>
+            <p>Got questions? Want to place an order? Call us at +94791234567 or email us at info@atliqfastfood.com</p>
+        </section>
+
+        <iframe class="chat-bot-popup" allow="microphone;" src="https://console.dialogflow.com/api-client/demo/embedded/1f07d684-5529-48e0-b916-ab2918ad5161"></iframe>
+        <button class="chat-bot-button" onclick="toggleChat()">💬</button>
+    </div>
+
+    <script>
+        function toggleChat() {
+            var chatBot = document.querySelector('.chat-bot-popup');
+            if (chatBot.style.display === 'none' || chatBot.style.display === '') {
+                chatBot.style.display = 'block';
+            } else {
+                chatBot.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>
